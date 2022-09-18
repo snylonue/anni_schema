@@ -1,6 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/snylonue/anni_schema/master/anni_repo_ablum.json",
     "type": "object",
+    "title": "Anni Repo Album",
     "properties": {
         "album" : {
             "type": "object",
@@ -10,6 +12,9 @@
                     "description": "should be a uuid"
                 },
                 "title": {
+                    "type": "string"
+                },
+                "edition" : {
                     "type": "string"
                 },
                 "artist": {
@@ -32,7 +37,7 @@
                     "uniqueItems": true
                 }
             },
-            "required": ["album_id", "title", "artist", "date", "type", "tags"]
+            "required": ["album_id", "title", "artist", "date", "type"]
         },
         "discs": {
             "type": "array",

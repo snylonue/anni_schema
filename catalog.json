@@ -1,0 +1,12 @@
+{
+    "$schema": "https://json.schemastore.org/schema-catalog.json",
+    "schemas": [
+        {
+            "name": "Anni Repo Album",
+            "description": "",
+            "fileMatch": [],
+            "url": "https://raw.githubusercontent.com/snylonue/anni_schema/master/anni_repo_ablum.json"
+        }
+    ],
+    "version": 1
+}
