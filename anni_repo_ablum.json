@@ -4,7 +4,7 @@
     "type": "object",
     "title": "Anni Repo Album",
     "properties": {
-        "album" : {
+        "album": {
             "type": "object",
             "properties": {
                 "album_id": {
@@ -14,7 +14,7 @@
                 "title": {
                     "type": "string"
                 },
-                "edition" : {
+                "edition": {
                     "type": "string"
                 },
                 "artist": {
@@ -26,7 +26,14 @@
                 },
                 "type": {
                     "type": "string",
-                    "enum": ["normal", "instrumental", "absoulte", "drama", "radio", "vocal"]
+                    "enum": [
+                        "normal",
+                        "instrumental",
+                        "absoulte",
+                        "drama",
+                        "radio",
+                        "vocal"
+                    ]
                 },
                 "tags": {
                     "type": "array",
@@ -37,7 +44,13 @@
                     "uniqueItems": true
                 }
             },
-            "required": ["album_id", "title", "artist", "date", "type"]
+            "required": [
+                "album_id",
+                "title",
+                "artist",
+                "date",
+                "type"
+            ]
         },
         "discs": {
             "type": "array",
@@ -60,7 +73,14 @@
                                 },
                                 "type": {
                                     "type": "string",
-                                    "enum": ["normal", "instrumental", "absoulte", "drama", "radio", "vocal"]
+                                    "enum": [
+                                        "normal",
+                                        "instrumental",
+                                        "absoulte",
+                                        "drama",
+                                        "radio",
+                                        "vocal"
+                                    ]
                                 },
                                 "tags": {
                                     "type": "array",
@@ -71,13 +91,25 @@
                                     "uniqueItems": true
                                 }
                             },
-                            "required": ["title"]
+                            "required": [
+                                "title"
+                            ]
                         }
                     }
                 },
-                "required": ["catalog"]
+                "required": [
+                    "catalog"
+                ]
             },
             "uniqueItems": true
         }
+    },
+    "x-taplo-info": {
+        "authors": [
+            "snylonue (https://github.com/snylonue)"
+        ],
+        "patterns": [
+            "^@?([A-z]|\\d)*-\\d*\\.toml$"
+        ]
     }
 }

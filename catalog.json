@@ -4,7 +4,7 @@
         {
             "name": "Anni Repo Album",
             "description": "",
-            "fileMatch": [],
+            "fileMatch": ["^@?([A-z]|\\d)*-\\d*\\.toml$"],
             "url": "https://raw.githubusercontent.com/snylonue/anni_schema/master/anni_repo_ablum.json"
         }
     ],
